@@ -50,7 +50,7 @@ while True:
             
             if deposito > 0:
                     saldo += deposito
-                    extrato.append([data,hora,deposito])
+                    extrato.append([data,hora,f'{deposito:.2f}'])
                     print("Operação realizada com sucesso")
                     
             else:
@@ -95,7 +95,7 @@ while True:
         
                     
                 else:
-                    print("O peração não realiza valor maior que o limite diário.")
+                    print("Operação não realiza valor maior que o limite diário ou valor invalido.")
         
 
 
@@ -125,7 +125,7 @@ while True:
             indice = 0 
             
             print("-" * 33)
-            print(f"Saldo total: R$ {saldo}")  
+            print(f"Saldo total: R$ {saldo:.2f}")  
             print("-" * 33)
             
 
